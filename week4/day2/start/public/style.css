@@ -1,0 +1,21 @@
+nav{
+  font-family: "Whitney SSm A", "Whitney SSm B", "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+  font-size: 16px;
+  color: white;
+}
+
+body{
+  font-family: "Whitney SSm A", "Whitney SSm B", "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+  color: white;
+  background: url("pizza_pic.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+a{
+  color: white;
+  font-style: italic;
+}
+
+form{
+  display: flex;
+}

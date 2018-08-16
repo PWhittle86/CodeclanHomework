@@ -1,0 +1,50 @@
+Polymorphism & Composition Homework - Quiz
+
+Polymorphism
+
+What does the word 'polymorphism' mean?
+
+The word polymorphism is derived from Greek - poly means 'many' and morphism means 'change'. A polymorph is something which has the ability to change it's shape.
+
+
+What does it mean when we apply polymorphism to OO design? Give a simple Java example.
+
+In OO programming, polymorphism means that an object is able to change into a different type of object that it is associated with. For example, if a class in java implemented an interface, it is possible to change the class into an interface object. This can be useful when Java requires a specific type of object for an Arraylist, or a function.
+
+
+What can we use to implement polymorphism in Java?
+
+As mentioned above, interfaces are useful tools to implement polymorphism. This is because an object that implements an interface can be changed to an interface object (if required) and back again if need be. Abstract classes also allow polymorphism to be used.
+
+
+How many 'forms' can an object take when using polymorphism?
+
+A type can utilise any of it's super class types as well as it's own.
+
+
+Give an example of when you could use polymorphism.
+
+Say you have an arraylist which requires a range of different objects to be input. Each of the different objects uses the IExample interface, meaning that each of the objects could be polymorphed into an Iexample object for the purpose of adding it to the array. Therefore, each of the objects could then be added to the array.
+
+
+Composition
+
+What do we mean by 'composition' in reference to object-oriented programming?
+
+Composition is the term used to describe the 'has-a' relationship that should be used when creating relationships between classes.
+
+
+When would you use composition? Provide a simple example in Java.
+
+Composition would be used when modelling a problem. Child elements of a parent class should be broken down as much as possible, in order to model them as accurately and effectively as necessary for the code.
+
+e.g. Person (name, age) - has a job (title, field, salary).
+
+
+What is/are the advantage(s) of using composition?
+
+It allows us to control the visibility of an object to other classes and to re-use only what we need to. It also allows for changes within an object not to have an impact upon the class that uses the has-a relationship.
+
+What happens to the behaviours when the object composed of them is destroyed?
+
+They are also destroyed.

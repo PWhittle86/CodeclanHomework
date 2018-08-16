@@ -1,0 +1,13 @@
+body {
+    background-image: url('/pic4.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h3 {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    }

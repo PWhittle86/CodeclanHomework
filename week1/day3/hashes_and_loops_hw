@@ -1,0 +1,270 @@
+stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Haymarket" ]
+
+#Exercise A
+
+# #Q1 Add "Edinburgh Waverley" to the end of the array
+#
+# stops.push("Edinburgh Waverley")
+# p stops
+
+
+# #Q2 Add "Glasgow Queen St" to the start of the array
+#
+# stops.unshift("Glasgow Queen Street")
+# p stops
+
+
+# #Q3 Add "Polmont" at the appropriate point (between "Falkirk High" and "Linlithgow")
+#
+# stops[3] = "Polmont"
+# p stops
+
+
+# #Q4 Work out the index position of "Linlithgow"
+#
+# p stops.index("Linlithgow")
+
+
+# #Q5 Remove "Livingston" from the array using its name
+#
+# stops.delete("Livingston")
+# p stops
+
+
+# #Q6 Delete "Cumbernauld" from the array by index
+#
+# stops.delete_at(1)
+# p stops
+#
+
+
+# #Q7 How many stops there are in the array?
+#
+# p stops.count()
+# p stops.length()
+# p stops.size()
+
+
+# #Q8 How many ways can we return "Falkirk High" from the array?
+
+# p stops[2]
+# p stops[-4]
+# p stops.slice(2) #Takes the element out of the array. If you use !, the element is removed completely, changing the original array.
+# p stops.fetch(2) #Will try to return the indexed element, but will return an error instead of nil if the element does not exist.
+# p stops.at(2) # Exactly the same as using square brackets.
+
+
+# #Q9 Reverse the positions of the stops in the array
+#
+# p stops.reverse()
+
+
+# #Q10 Print out all the stops using a for loop
+
+# for station in stops
+#   p station
+# end
+
+
+
+#Exercise B
+
+users = {
+  "Jonathan" => {
+    :twitter => "jonnyt",
+    :lottery_numbers => [6, 12, 49, 33, 45, 20],
+    :home_town => "Stirling",
+    :pets => [
+    {
+      :name => "fluffy",
+      :species => "cat"
+    },
+    {
+      :name => "fido",
+      :species => "dog"
+    },
+    {
+      :name => "spike",
+      :species => "dog"
+    }
+  ]
+  },
+  "Erik" => {
+    :twitter => "eriksf",
+    :lottery_numbers => [18, 34, 8, 11, 24],
+    :home_town => "Linlithgow",
+    :pets => [
+    {
+      :name => "nemo",
+      :species => "fish"
+    },
+    {
+      :name => "kevin",
+      :species => "fish"
+    },
+    {
+      :name => "spike",
+      :species => "dog"
+    },
+    {
+      :name => "rupert",
+      :species => "parrot"
+    }
+  ]
+  },
+  "Avril" => {
+    :twitter => "bridgpally",
+    :lottery_numbers => [12, 14, 33, 38, 9, 25],
+    :home_town => "Dunbar",
+    :pets => [
+      {
+        :name => "monty",
+        :species => "snake"
+      }
+    ]
+  }
+}
+
+
+
+
+# #Q1 Get Jonathan's Twitter handle (i.e. the string "jonnyt")
+#
+# p users["Jonathan"][:twitter]
+
+
+# #Q2 Get Erik's hometown
+#
+# p users["Erik"][:home_town]
+
+
+# #Q3 Get the array of Erik's lottery numbers
+#
+# p users["Erik"][:lottery_numbers]
+
+
+# #Q4 Get the type of Avril's pet Monty
+# p users["Avril"][:pets][0][:species]
+
+
+# #Q5 Get the smallest of Erik's lottery numbers
+# p users["Erik"][:lottery_numbers].sort[0]
+# p users["Erik"][:lottery_numbers].min()
+
+
+# Q6 Return an array of Avril's lottery numbers that are even
+# def even_lottery_array(array)
+#   output = []
+#     for number in array
+#       if number % 2 == 0
+#         output.unshift(number)
+#       end
+#     end
+#     return output.sort
+#   end
+#
+# p even_lottery_array(users["Avril"][:lottery_numbers])
+
+# avril_lottery = users["Avril"][:lottery_numbers]
+# even_lottery = []
+#
+# for num in avril_lottery
+#   if num % 2 == 0
+#     even_lottery << num
+#   end
+# end
+
+
+#Q7 Erik is one lottery number short! Add the number 7 to be included in his lottery numbers
+
+# users["Erik"][:lottery_numbers].push(7)
+# p users["Erik"][:lottery_numbers].sort
+
+
+#Q8 Change Erik's hometown to Edinburgh
+
+# users ["Erik"][:home_town] = "Edinburgh"
+# p users ["Erik"][:home_town]
+
+
+#Q9 Add a pet dog to Erik called "Fluffy"
+
+# users["Erik"][:pets].unshift ({:name => "Fluffy", :species => "Dog"})
+# p users ["Erik"][:pets]
+
+
+#Q10 Add another person to the users hash
+
+# users ["Pete"] = {
+#   :twitter => "StrafeMcgee",
+#   :lottery_numbers => [4, 8, 15, 16, 23, 42],
+#   :home_town => "Glasgow",
+#   :pets => [
+#     {
+#       :name => "Scooby",
+#       :species => "Cat"
+#     }
+#   ]
+# }
+#
+# p users
+
+
+#Exercise C
+
+united_kingdom = [
+  {
+    name: "Scotland",
+    population: 5295000,
+    capital: "Edinburgh"
+  },
+  {
+    name: "Wales",
+    population: 3063000,
+    capital: "Swansea"
+  },
+  {
+    name: "England",
+    population: 53010000,
+    capital: "London"
+  }
+]
+
+#Q1 Change the capital of Wales from "Swansea" to "Cardiff".
+
+# united_kingdom[1][:capital]="Cardiff"
+# p united_kingdom[1]
+
+
+#Q2 Create a Hash for Northern Ireland and add it to the united_kingdom array (The capital is Belfast, and the population is 1,811,000).
+
+# united_kingdom.push ({name: "Northern Ireland", population: "1,811,000", capital: "Belfast"})
+# p united_kingdom
+
+
+#Q3 Use a loop to print the names of all the countries in the UK.
+
+# for country_hash in united_kingdom
+#   p "#{country_hash[:name]}"
+# end
+
+
+#Q4 Use a loop to find the total population of the UK.
+
+# totalpop = 0
+#
+# for country_hash in united_kingdom
+#   totalpop += country_hash[:population]
+# end
+#
+# puts totalpop
+
+def pop_count(array)
+  total_pop = 0
+  for country in array
+    total_pop += country[:population]
+  end
+  return total_pop.to_s()
+end
+
+p pop_count(united_kingdom)

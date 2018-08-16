@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-content: center;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 35px;
+  color: #009FB7;
+  background-color: #272727;
+}
+
+footer{
+  font-family: 'Do Hyeon', sans-serif;
+  color: #009FB7;
+  background-color: #272727;
+  margin: 0;
+}
+
+main {
+  background-color: #009FB7;
+}
+
+h3 {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 35px;
+  color: #272727;
+}
+
+img {
+  max-width: 35%;
+  max-height: 35%;
+}
+
+p{
+  margin: 0;
+}
+
+#beers {
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 220px;
+  align-content: space-between;
+}
+
+.beer {
+  border: 3px;
+  border-style: double;
+  border-color: #272727;
+  padding: 30px;
+  max-width: 200px;
+  max-height: 500px;
+  object-fit: contain;
+}

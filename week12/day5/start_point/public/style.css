@@ -1,0 +1,137 @@
+body{
+	margin: 0;
+	height: 100%;
+	background-color: #070F28;
+	font-family: 'Dosis', sans-serif;
+}
+
+header{
+	display: flex;
+	justify-content: center;
+	background-color: #FFFFFF;
+	color: #0E1428;
+	margin: 0;
+	font-family: 'Dosis', sans-serif;}
+
+h1{
+	margin: 0;
+	font-size: 60px;
+}
+
+h3{
+	margin-top: 0;
+	text-align: center;
+}
+
+li{
+	margin: 0;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+}
+
+footer{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	bottom: 0;
+	background-color: #0E1428;
+	color: #FFFFFF;
+	margin: 0;
+	font-family: 'Dosis', sans-serif;
+	font-style: italic;
+	font-size: 12px;
+	padding: 0;
+}
+
+#bandsInTownLink, #bandsInTownLink:visited{
+	color: #FFFFFF;
+}
+
+img {
+	max-width: 400px;
+	max-height: auto;
+}
+
+#title, #title:visited{
+     color: #0E1428;
+}
+
+#searchWrapper{
+	padding-top: 15px;
+	width: auto;
+	display: flex;
+	justify-content: center;
+}
+
+#contentWrapper{
+	padding-top: 40px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#giginfo{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#bandImage{
+	transition: filter .5s ease-in-out;
+  	-webkit-filter: grayscale(0%);
+  	filter: grayscale(0%);
+	position: relative;
+	max-height: 400px;
+	max-width:400px;
+	padding-right: 10px;
+}
+
+#bandImage:hover #imageText{
+  	transition: opacity 500ms;
+	opacity: 0.8;
+}
+
+#bandImage:hover{
+	-webkit-filter: grayscale(100%);
+  	filter: grayscale(100%);
+}
+
+#textContainer{
+	position: absolute;
+	height: 400px;
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#imageText{
+	color: #FFFFFF;
+	background-color: black;
+	opacity: 0;
+	font-size: 50px;
+}
+
+#map{
+	padding-left: 5px;
+	padding-right: 5px;
+  	width: 400px;
+  	height: 400px;
+  	z-index: 0;
+}
+
+#events{
+	padding-left: 10px;
+	width: 300px;
+	height: 400px;
+  	color: #FFFFFF;
+  	overflow: scroll;
+}
+
+#footerlist{
+	margin: 0;
+}
+
